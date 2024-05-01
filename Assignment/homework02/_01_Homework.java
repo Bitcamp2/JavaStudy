@@ -1,11 +1,11 @@
-package chap99_Homework.homework01;
+package chap99_Homework.homework02;
 
 public class _01_Homework {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		/*
-		RockScissPaper rsp = new RockScissPaper();
+		_02_RockScissPaper rsp = new _02_RockScissPaper();
 		rsp.start();
 		*/
 		
@@ -14,7 +14,7 @@ public class _01_Homework {
 		arr = reverse(arr);
 		System.out.println(arr[0]+" "+arr[1]+" "+arr[2]+" "+arr[3]+" "+arr[4]);
 		
-		char[] chArr = {'a','B','c','D','E'};
+		char[] chArr = {'A','B','c','D','E'};
 		chArr = reverseAlphabet(chArr);
 		System.out.println(chArr[0]+" "+chArr[1]+" "+chArr[2]+" "+chArr[3]+" "+chArr[4]);
 		

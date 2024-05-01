@@ -1,9 +1,9 @@
-package chap99_Homework.homework01;
+package chap99_Homework.homework02;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class RockScissPaper {
+public class _02_RockScissPaper {
 	private Scanner sc = new Scanner(System.in);
 	private Random rd = new Random();
 
@@ -39,7 +39,7 @@ public class RockScissPaper {
 			System.out.println("이겼습니다.");
 			winCnt++;
 		}
-		else if((user==0 && com==0)||(user==1 && com==1)||(user==2 && com==2)) {
+		else if(user==com) {
 			System.out.println("비겼습니다.");
 			drawCnt++;
 		}
