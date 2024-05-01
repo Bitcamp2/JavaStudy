@@ -3,7 +3,7 @@ package chap99_Homework.homework02;
 import java.util.Random;
 import java.util.Scanner;
 
-public class _02_RockScissPaper {
+public class _03_RockScissPaper {
 	private Scanner sc = new Scanner(System.in);
 	private Random rd = new Random();
 
