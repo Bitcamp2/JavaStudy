@@ -1,4 +1,4 @@
-package advance;
+package _240502_.advance;
 
 public class Worker2 {
 
@@ -28,7 +28,7 @@ public class Worker2 {
         System.out.println("Month Pay: " + pay);
     }
 
-    public void showEmplyeeInfo() {
+    public void showEmployeeInfo() {
         System.out.println("Eno: " + eno);
         System.out.println("Emplyee: " + name);
         System.out.println("Pay: " + pay);

@@ -1,4 +1,4 @@
-package basic;
+package _240502_.basic;
 
 public class Cat extends Mammal {
 

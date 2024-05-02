@@ -1,4 +1,4 @@
-package middle;
+package _240502_.middle;
 
 import java.util.Scanner;
 
