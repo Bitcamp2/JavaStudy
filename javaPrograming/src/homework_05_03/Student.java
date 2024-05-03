@@ -1,0 +1,7 @@
+package homework_05_03;
+
+public interface Student {
+	void saveInfo(int index, String subject, int score);
+	void printInfo();
+	double getAvg();
+}

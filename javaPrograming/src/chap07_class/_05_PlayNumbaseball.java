@@ -9,7 +9,6 @@ public class _05_PlayNumbaseball {
 		Numbaseball nb = new Numbaseball();
 		
 		nb.start();
-		
 	}
 
 }
