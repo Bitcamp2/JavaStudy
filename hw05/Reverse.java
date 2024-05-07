@@ -5,14 +5,20 @@ import java.util.ArrayList;
 public class Reverse {
 
     public String reverseString(String str) {
-        char[] ch = str.toCharArray();
-        char[] rev = new char[ch.length];
+//        char[] ch = str.toCharArray();
+//        char[] rev = new char[ch.length];
+//
+//        for (int i = 0; i < ch.length; i++) {
+//            rev[i] = ch[ch.length - 1 - i];
+//        }
+//        return String.valueOf(rev);
 
-        for (int i = 0; i < ch.length; i++) {
-            rev[i] = ch[ch.length - 1 - i];
+        String reverse = ""; // reverse 초기화 안하면 null값
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reverse += str.charAt(i);
         }
-        String result = String.valueOf(rev);
-        return result;
+
+        return reverse;
     }
 
     public String dupString(String str) {
@@ -29,12 +35,13 @@ public class Reverse {
     public String mulString(String str) {
         String answer = "";
 
-        for (int i = 0; i < str.length(); i++) {
-            if (i % 15 == 0 && i != 0) {
+        answer += str.charAt(0);
+        for (int i = 1; i < str.length(); i++) {
+            if (i % 15 == 0) {
                 answer += 35;
-            } else if (i % 5 == 0 && i != 0) {
+            } else if (i % 5 == 0) {
                 answer += 5;
-            } else if (i % 3 == 0 && i != 0) {
+            } else if (i % 3 == 0) {
                 answer += 3;
             } else {
                 answer += str.charAt(i);
