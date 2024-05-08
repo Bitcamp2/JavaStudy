@@ -8,4 +8,5 @@ public interface Student {
     int getSno();
     StringBuffer getName();
     void initSubScore(int cnt);
+
 }

@@ -5,29 +5,52 @@ public class Mid02 {
 
         char[] ch = new char[]{'b', 'c', 's', 'i', 'i', 'o', 'q', 'n', 't', 'm', 'l', 't'};
 
-        String bit = "";
-        bit += ch[0];
-        bit += ch[3];
-        bit += ch[8];
+        String[] stArr = {"", "", "", ""};
 
-        String com = "";
-        com += ch[1];
-        com += ch[5];
-        com += ch[9];
 
-        String sql = "";
-        sql += ch[2];
-        sql += ch[6];
-        sql += ch[10];
+        for (int i = 0; i < ch.length; i++) {
+            if (i % 4 == 0) {
+                stArr[0] += ch[i];
+            } else if (i % 4 == 1) {
+                stArr[1] += ch[i];
+            } else if (i % 4 == 2) {
+                stArr[2] += ch[i];
+            } else if (i % 4 == 3) {
+                stArr[3] += ch[i];
+            }
+        }
 
-        String it = "";
-        it += ch[4];
-        it += ch[7];
-        it += ch[11];
+        for (String s : stArr) {
+            System.out.println(s);
+        }
 
-        System.out.println(bit);
-        System.out.println(com);
-        System.out.println(sql);
-        System.out.println(it);
+
+        // 문자열 배열의 값을 다시 문자배열에 담기
+        String bit = "bit";
+        String com = "com";
+        String sql = "sql";
+        String intStr = "int";
+
+        char[] ch2 = new char[ch.length];
+
+        for (int i = 0; i < ch.length; i++) {
+            if (i % 4 == 0) {
+                ch2[i] = bit.charAt(i / 4);
+                //인덱스를 4로 나눈 나머지가 0일때 bit -> 0, 4, 8
+            } else if (i % 4 == 1) {
+                ch2[i] = com.charAt(i / 4);
+                //인덱스를 4로 나눈 나머지가 1일때 com -> 1, 5, 9
+            } else if (i % 4 == 2) {
+                ch2[i] = sql.charAt(i / 4);
+                //인덱스를 4로 나눈 나머지가 2일때 sql -> 2, 6, 10
+            } else if (i % 4 == 3) {
+                ch2[i] = intStr.charAt(i / 4);
+                //인덱스를 4로 나눈 나머지가 3일때 int  -> 3, 7, 11
+            }
+        }
+
+        for (char c : ch2) {
+            System.out.print(c + " ");
+        }
     }
 }
