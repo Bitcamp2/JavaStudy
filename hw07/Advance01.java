@@ -22,7 +22,7 @@ public class Advance01 {
                 index++;
             }
         }
-        //delete(인덱스, 값)
+
         System.out.println(sb2);
     }
 }
