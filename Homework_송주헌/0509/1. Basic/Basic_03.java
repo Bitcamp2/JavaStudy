@@ -3,7 +3,7 @@ package homework_05_09;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Basic_03 {
+public class basic_03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
