@@ -22,8 +22,8 @@ public class Mid02 {
             mulMap.put(a, b);
         }
 
-        Map.Entry<Integer, Integer> getMulEntry = getMaxMul(mulMap);
-        System.out.println("가장 큰 곱을 갖는 Entry: Key = " + getMulEntry.getKey() + ", Value = " + getMulEntry.getValue());
+        //Map.Entry<Integer, Integer> getMulEntry = getMaxMul(mulMap);
+        System.out.println("가장 큰 곱을 갖는 Entry: Key = " + getMaxMul(mulMap).getKey() + ", Value = " + getMaxMul(mulMap).getValue());
     }
 
     private static Map.Entry<Integer, Integer> getMaxMul(Map<Integer, Integer> dulMap) {
