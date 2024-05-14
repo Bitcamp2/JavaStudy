@@ -40,11 +40,13 @@ public class GenericCla<T> {
     }
 
     // 4. 어떤 배열이던지 받아서 인덱스가 3의 배수인 요소만 출력하는 메소드 void printArr을 구현하세요.
-    public static void printArr(int[] listArr) {
+
+
+    public static <T> void printArr(T[] listArr) {
 
         for (int i = 0; i < listArr.length; i++) {
             if (i % 3 == 0 && i != 0) {
-                System.out.println(listArr[i] + " ");
+                System.out.print(listArr[i] + " ");
             }
         }
     }
@@ -63,9 +65,9 @@ public class GenericCla<T> {
 
     // 6. Map을 어떤형태로든 받아서 value를 String으로 변경했을 때
     // 길이가 10이상되는 key를 출력하는 메소드 void printOverTen을 구현하세요.
-    public static void printOverTen(Map<?, ?> map) {
+    public static <K, V> void printOverTen(Map<K, V> map) {
 
-        for (Map.Entry<?, ?> entry : map.entrySet()) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
             if (String.valueOf(entry.getValue()).length() >= 10) {
                 System.out.println("Key: " + entry.getKey());
             }

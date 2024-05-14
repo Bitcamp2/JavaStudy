@@ -13,7 +13,7 @@ public class MiddleMain {
         //  일반 메뉴 잔수를 받아서 각 메뉴의 가격을 계산하는 추상 메소드 구현한다.
         //  아아 2잔 뜨아 1잔 아라 1잔 휘핑 모카 2잔 콜드브루 2잔일 때의 가격을 출력하세요
         System.out.println("커피 총 가격: " + (CoffeeMenu.AMERICANO.totalPrice(2, 1)
-                + CoffeeMenu.LATTEM.totalPrice(1, 0)
+                + CoffeeMenu.LATTE.totalPrice(1, 0)
                 + CoffeeMenu.MOCHA.totalPrice(2, 0)
                 + CoffeeMenu.COLDBREW.totalPrice(0, 2)));
 
@@ -40,12 +40,11 @@ public class MiddleMain {
 
     }
 
-    public static List<Map.Entry<Integer, Integer>> getOverHundr(Map<Integer, Integer> map) {
+    public static <K, V> List<Map.Entry<K, V>> getOverHundr(Map<K, V> map) {
+        List<Map.Entry<K, V>> entryList = new ArrayList<>();
 
-        List<Map.Entry<Integer, Integer>> entryList = new ArrayList<>();
-
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if ((entry.getKey() * entry.getValue()) > 1000) {
+        for (Map.Entry<K, V> entry : map.entrySet()) {
+            if (((int) entry.getKey() * (int) entry.getValue()) > 1000) {
                 entryList.add(entry);
             }
         }

@@ -3,24 +3,30 @@ package hw10.basic;
 import java.util.HashMap;
 import java.util.Map;
 
+import static hw10.basic.GenericCla.printArr;
+
 public class BasicMain {
     public static void main(String[] args) {
 
         // base02
         System.out.println(GenericCla.add("bobaesj", "sjsjsjsj"));
+        System.out.println(GenericCla.add(1, 1.3));
 
         // base04
-        int[] intArr = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
-        GenericCla.printArr(intArr);
+        // 제네릭타입으로 배열 생성해야함
+        Integer[] intArr1 = new Integer[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        printArr(intArr1);
+        System.out.println();
 
         // base05
-        System.out.println(GenericCla.getMin(intArr));
+        int[] intArr2 = new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        System.out.println(GenericCla.getMin(intArr2));
 
         // base06
-        Map<String, String> map = new HashMap<>();
-        map.put("bobaesjbobaesjbobaesj", "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-        map.put("bobaesj", "aaaaaaaaa");
-        map.put("bobj", "aaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssaaaaaaaaaaaa");
+        Map<String, Integer> map = new HashMap<>();
+        map.put("bobaesjbobaesjbobaesj", 1111111111);
+        map.put("bobaesj", 1111111222);
+        map.put("bobj", 1111333);
         GenericCla.printOverTen(map);
 
         // base07

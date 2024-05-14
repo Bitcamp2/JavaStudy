@@ -4,22 +4,22 @@ public enum CoffeeMenu {
 
     AMERICANO(2000){
         public int totalPrice(int optionOrder, int normalOrder){
-            return ((optionOrder * 2300) + (normalOrder * 2000));
+            return ((optionOrder * (getPrice() + 300) + (normalOrder * getPrice())));
         }
     },
-    LATTEM(3000){
+    LATTE(3000){
         public int totalPrice(int optionOrder, int normalOrder){
-            return (optionOrder * 3500) + (normalOrder * 3000);
+            return (optionOrder * (getPrice() + 500)) + (normalOrder * getPrice());
         }
     },
     MOCHA(4000){
         public int totalPrice(int optionOrder, int normalOrder){
-            return (optionOrder * 5000) + (normalOrder * 4000);
+            return (optionOrder * (getPrice() + 1000)) + (normalOrder * getPrice());
         }
     },
     COLDBREW(4500){
         public int totalPrice(int optionOrder, int normalOrder){
-            return (optionOrder * 4700) + (normalOrder * 4500);
+            return (optionOrder * (getPrice() + 200)) + (normalOrder * getPrice());
         }
     };
 

@@ -19,12 +19,17 @@ public class Main {
 
     public static void sumDays(int year) {
 
+        // 이넘배열만들어서 조건문 돌리기
+        Month[] months = Month.values();
+
         int sum = 0;
         for (int i = 0; i < 5; i++) {
             if (year % 400 == 0 || (year % 4 == 0) && (year % 100 != 0)) {
-                sum = Month.JAN.getsMonth() + Month.FAB.getsMonth() + Month.MAR.getsMonth() + Month.APR.getsMonth() + Month.MAR.getsMonth();
+                sum += months[i].getsMonth();
+                //sum = Month.JAN.getsMonth() + Month.FAB.getsMonth() + Month.MAR.getsMonth() + Month.APR.getsMonth() + Month.MAR.getsMonth();
             } else {
-                sum = Month.JAN.getfMonth() + Month.FAB.getfMonth() + Month.MAR.getfMonth() + Month.APR.getfMonth() + Month.MAR.getfMonth();
+                sum += months[i].getfMonth();
+                //sum = Month.JAN.getfMonth() + Month.FAB.getfMonth() + Month.MAR.getfMonth() + Month.APR.getfMonth() + Month.MAR.getfMonth();
             }
         }
 
