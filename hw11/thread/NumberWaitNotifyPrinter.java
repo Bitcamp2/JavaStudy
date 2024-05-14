@@ -13,10 +13,10 @@ public class NumberWaitNotifyPrinter {
         for (int i = this.num; i <= 50; i++) {
             if (i % 3 == 0) {
                 System.out.println("스레드 1 - " + i);
-                notify();
+                notify(); // 다음스레드 대기상태로 만듬
 
                 try {
-                    wait();
+                    wait(); // 현재 스레드 일시정지
                 } catch (InterruptedException ie) {
                     System.out.println(ie.getMessage());
                 }

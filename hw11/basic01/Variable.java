@@ -41,6 +41,10 @@ public class Variable {
 
         System.out.println("넓이: " + (2 * PI * radius) + ", 둘레: " + (4 * PI * radius));
 
-        // 4.
+        // 4. 사용자가 입력한 5개의 정수의 합계와 평균을 출력하세요.
+
+        System.out.println("정수 5개 입력: ");
+
+
     }
 }
