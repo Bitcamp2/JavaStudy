@@ -6,6 +6,7 @@ public class NumWaitNotifyThread01 extends Thread{
 
     private NumberWaitNotifyPrinter nwnp;
     Scanner sc = new Scanner(System.in);
+
     int num = sc.nextInt();
 
     public NumberWaitNotifyPrinter getNwnp() {

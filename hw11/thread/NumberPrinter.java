@@ -23,6 +23,7 @@ public class NumberPrinter {
         }
     }
 
+    // 위아래가 똑같은 방식
     public void numPrint2(int num) {
         synchronized (this) {
             setNum(num);
