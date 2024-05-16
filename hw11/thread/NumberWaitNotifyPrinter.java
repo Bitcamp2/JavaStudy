@@ -28,7 +28,7 @@ public class NumberWaitNotifyPrinter {
         this.setNum(num);
 
         for (int i = this.num; i <= 100; i++) {
-            if (i % 35 == 0) {
+            if (i % 5 == 0 && i % 7 == 0) {
                 System.out.println("스레드 2 - " + i);
                 notify();
 

@@ -1,4 +1,4 @@
-package hw12;
+package hw12.base01;
 
 // 1. PrintNumber 함수형 인터페이스 생성
 @FunctionalInterface
