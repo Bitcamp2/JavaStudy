@@ -7,6 +7,7 @@ public class Print {
 
         int[] numbers = {1,2,3,4,5,6,7,8};
 
+
         PrintNumber printEvenNum = (int[] numArr) -> {
             Arrays.stream(numArr)
                     .filter(n -> n % 2 == 0)

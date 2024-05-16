@@ -19,10 +19,11 @@ public class Combine {
 //        StringBuilder result = utils.combineStrBuilder(sb1, sb2);
 //             System.out.println(result.toString());
         // 2번
-        StringBuilder result = combineStrBuilder(sb1, sb2);
+//        StringBuilder result = combineStrBuilder(sb1, sb2);
+//        System.out.println(result.toString());
 
-        System.out.println(result.toString());
-
+          StringBuilderUtils combineStrBuilder = Combine::combineStrBuilder;
+          System.out.println(combineStrBuilder(sb1, sb2));
 
     }
     public static StringBuilder combineStrBuilder (StringBuilder sb1, StringBuilder sb2) {
