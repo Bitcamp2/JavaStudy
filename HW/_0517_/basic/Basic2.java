@@ -8,7 +8,7 @@ public class Basic2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        List<String> strList = new ArrayList<String>();
+        List<String> strList = new ArrayList<>();
 
 
         for (int i = 0; i < 10; i++) {
