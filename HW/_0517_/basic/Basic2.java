@@ -17,12 +17,11 @@ public class Basic2 {
             strList.add(input);
         }
 
+
         System.out.println("길이가 5 이상인 문자열:");
-        for (String str : strList) {
-            if (str.length() >= 5) {
-                System.out.println(str);
-            }
-        }
+        strList.stream()
+                .filter(str -> str.length() >= 5)
+                .forEach(System.out::println);
 
         sc.close();
     }
