@@ -20,7 +20,6 @@ public class StringBuilderMain01 {
     }
 
     public static StringBuilder combineStrBuilder(StringBuilder sb1, StringBuilder sb2, StringBuilderUtils stringBuilderUtils) {
-        StringBuilder inputAppenSb = stringBuilderUtils.combineStrBuilder(sb1, sb2);
-        return inputAppenSb.reverse();
+        return stringBuilderUtils.combineStrBuilder(sb1, sb2).reverse();
     }
 }

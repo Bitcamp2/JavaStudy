@@ -19,8 +19,7 @@ public class CalculatorMain {
                 list.add(i);
             }
             list.sort(Comparator.naturalOrder());
-
-            System.out.println("최대값: " + list.getLast());
+            return list.getLast();
         });
 
         IntArrUtils.getMid(numArr, arr -> {
@@ -30,7 +29,7 @@ public class CalculatorMain {
             }
             list.sort(Comparator.naturalOrder());
 
-            System.out.println("중간값: " + list.get(list.size() / 2));
+            return list.get(list.size() / 2);
         });
 
         IntArrUtils.getMin(numArr, arr -> {
@@ -40,7 +39,7 @@ public class CalculatorMain {
             }
             list.sort(Comparator.naturalOrder());
 
-            System.out.println("최소값: " + list.getFirst());
+            return list.getFirst();
         });
     }
 }
