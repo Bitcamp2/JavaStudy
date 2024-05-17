@@ -1,6 +1,7 @@
 package hw12.mid03;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -14,32 +15,21 @@ public class CalculatorMain {
         int[] numArr = new int[]{1, 30, 5, 72, 3};
 
         IntArrUtils.getMax(numArr, arr -> {
-            List<Integer> list = new ArrayList<>();
-            for (int i : arr) {
-                list.add(i);
-            }
-            list.sort(Comparator.naturalOrder());
-            return list.getLast();
+            Arrays.sort(arr);
+
+            return arr[arr.length - 1];
         });
 
         IntArrUtils.getMid(numArr, arr -> {
-            List<Integer> list = new ArrayList<>();
-            for (int i : arr) {
-                list.add(i);
-            }
-            list.sort(Comparator.naturalOrder());
+            Arrays.sort(arr);
 
-            return list.get(list.size() / 2);
+            return arr[arr.length/2];
         });
 
         IntArrUtils.getMin(numArr, arr -> {
-            List<Integer> list = new ArrayList<>();
-            for (int i : arr) {
-                list.add(i);
-            }
-            list.sort(Comparator.naturalOrder());
+            Arrays.sort(arr);
 
-            return list.getFirst();
+            return arr[0];
         });
     }
 }

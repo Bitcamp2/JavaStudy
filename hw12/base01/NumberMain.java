@@ -8,7 +8,6 @@ public class NumberMain {
         // 1. 매개변수로 받아온 정수배열에서 짝수만 찾아서 출력하는 printEvenNum을 람다식으로 구현하세요.
         // PrintNumber 함수형 인터페이스 생성, printEnvenNum(int[] numArr) 추상 메소드로 선언.
         int[] intArr = new int[10];
-
         // 임의 배열 생성
         Scanner sc = new Scanner(System.in);
         for (int i = 0; i < intArr.length; i++) {
@@ -17,16 +16,8 @@ public class NumberMain {
 
         // intArr배열을 numArr라는 변수명으로 람다식 실행
         printEvenNum(intArr, arr -> {
-            int[] evenArr = new int[10];
-            int index = 0;
-            for (int i = 0; i < arr.length; i++) {
-                if (arr[i] % 2 == 0 && arr[i] != 0) {
-                    evenArr[index++] = arr[i];
-                }
-            }
-
-            for (int i : evenArr) {
-                if (i != 0) {
+            for (int i : arr) {
+                if (i != 0 && i % 2 == 0) {
                     System.out.print(i + " ");
                 }
             }

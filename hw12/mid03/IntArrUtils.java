@@ -1,9 +1,5 @@
 package hw12.mid03;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-
 public class IntArrUtils {
 
     public static void getMax(int[] arr, MaxMinMid maxMinMid) {
